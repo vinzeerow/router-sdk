@@ -1,6 +1,6 @@
-import { Currency, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
-import { Pool } from '@uniswap/v3-sdk'
+import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import { Pair } from '@phuphamdeltalabs/v2-sdk'
+import { Pool } from '@phuphamdeltalabs/v3sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 
 /**
@@ -18,14 +18,14 @@ export const partitionMixedRouteByProtocol = (route: MixedRouteSDK<Currency, Cur
       (route.pools[left] instanceof Pool && route.pools[right] instanceof Pair) ||
       (route.pools[left] instanceof Pair && route.pools[right] instanceof Pool)
     ) {
-      acc.push(route.pools.slice(left, right))
+      acc.push(route.pools.slice(left, right) as never)
       left = right
     }
     // seek forward with right pointer
     right++
     if (right === route.pools.length) {
       /// we reached the end, take the rest
-      acc.push(route.pools.slice(left, right))
+      acc.push(route.pools.slice(left, right) as never)
     }
   }
   return acc
