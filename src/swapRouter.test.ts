@@ -1,5 +1,5 @@
-import { BigintIsh, CurrencyAmount, Ether, Percent, Token, TradeType, WETH9 } from '@phuphamdeltalabs/sdkcore'
-import { Pair, Route as V2Route, Trade as V2Trade } from '@phuphamdeltalabs/v2-sdk'
+import { BigintIsh, CurrencyAmount, Ether, Percent, Token, TradeType, WETH9 } from '@tpvinh/sdk-core'
+import { Pair, Route as V2Route, Trade as V2Trade } from '@tpvinh/v2-sdk'
 import {
   encodeSqrtRatioX96,
   FeeAmount,
@@ -10,7 +10,7 @@ import {
   TickMath,
   TICK_SPACINGS,
   Trade as V3Trade,
-} from '@phuphamdeltalabs/v3sdk'
+} from '@tpvinh/v3-sdk'
 import JSBI from 'jsbi'
 import { SwapRouter, Trade } from '.'
 import { ApprovalTypes } from './approveAndCall'

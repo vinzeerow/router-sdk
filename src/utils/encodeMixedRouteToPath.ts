@@ -1,7 +1,7 @@
 import { pack } from '@ethersproject/solidity'
-import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
-import { Pool } from '@phuphamdeltalabs/v3sdk'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
+import { Currency, Token } from '@tpvinh/sdk-core'
+import { Pool } from '@tpvinh/v3-sdk'
+import { Pair } from '@tpvinh/v2-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { V2_FEE_PATH_PLACEHOLDER } from '../constants'
 

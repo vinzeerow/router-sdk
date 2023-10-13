@@ -1,4 +1,4 @@
-import { sqrt, Token, CurrencyAmount, TradeType, WETH9, Ether, Percent, Price } from '@phuphamdeltalabs/sdkcore'
+import { sqrt, Token, CurrencyAmount, TradeType, WETH9, Ether, Percent, Price } from '@tpvinh/sdk-core'
 import JSBI from 'jsbi'
 import { MixedRoute, RouteV2, RouteV3 } from './route'
 import { Trade } from './trade'
@@ -10,8 +10,8 @@ import {
   TickMath,
   nearestUsableTick,
   encodeSqrtRatioX96,
-} from '@phuphamdeltalabs/v3sdk'
-import { Pair, Route as V2RouteSDK } from '@phuphamdeltalabs/v2-sdk'
+} from '@tpvinh/v3-sdk'
+import { Pair, Route as V2RouteSDK } from '@tpvinh/v2-sdk'
 import { MixedRouteSDK } from './mixedRoute/route'
 
 describe('Trade', () => {

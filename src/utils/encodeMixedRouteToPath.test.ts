@@ -1,6 +1,6 @@
-import { CurrencyAmount, Ether, Token, WETH9 } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
-import { encodeSqrtRatioX96, FeeAmount, Pool } from '@phuphamdeltalabs/v3sdk'
+import { CurrencyAmount, Ether, Token, WETH9 } from '@tpvinh/sdk-core'
+import { Pair } from '@tpvinh/v2-sdk'
+import { encodeSqrtRatioX96, FeeAmount, Pool } from '@tpvinh/v3-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { encodeMixedRouteToPath } from './encodeMixedRouteToPath'
 
