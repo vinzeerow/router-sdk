@@ -1,6 +1,6 @@
 {
-  "name": "@phuphamdeltalabs/router-sdk",
-  "version": "1.0.1",
+  "name": "@tpvinh/router-sdk",
+  "version": "1.0.2",
   "description": "An sdk for routing swaps using Uniswap v2 and Uniswap v3.",
   "publishConfig": {
     "access": "public"
@@ -27,9 +27,9 @@
   "license": "MIT",
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
-    "@phuphamdeltalabs/sdkcore": "^5.0.0",
-    "@phuphamdeltalabs/v2-sdk": "^1.0.4",
-    "@phuphamdeltalabs/v3sdk": "^1.0.1",
+    "@tpvinh/sdk-core": "^1.0.1",
+    "@tpvinh/v2-sdk": "^1.0.1",
+    "@tpvinh/v3-sdk": "^1.0.1",
     "@uniswap/swap-router-contracts": "^1.1.0"
   },
   "devDependencies": {
